@@ -1,0 +1,8 @@
+<h3>Here are your current lots:</h3>
+<ul>
+  {{#each lot in model}}
+    <li>{{#link-to 'lot' lot}}{{lot.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-lot' classNames='btn btn-danger'}}Add new lot{{/link-to}}

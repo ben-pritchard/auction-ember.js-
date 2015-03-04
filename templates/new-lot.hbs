@@ -1,0 +1,7 @@
+<h3>Add a new lot</h3>
+<form>
+  <label for="lotName">Lot name:</label>
+  {{input value=lotName id="lotName" class="form-control"}}
+  {{textarea value=lotDescription id="lotDescription" rows="3" cols="60" class="form-control"}}
+  <button class="btn btn-danger" {{action: ""}}>Add</button>
+</form>
