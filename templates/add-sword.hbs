@@ -2,6 +2,9 @@
 
 <form>
   <label for="sword">Sword Name</label>
-  {{input value=swordName id="swordName" class="form-control"}}
+  {{input value=swordName id="swordName" class="form-control" placeholder="e.g. Excalibur"}}
+  {{textarea rows="3" cols="60" value=swordDescription id="swordDescription" class="form-control" placeholder="His royal highness King Arthur's legendary sword he pulled from the stone that fateful day"}}
+  {{input value=startingBid id="startingBid" class="form-control" placeholder="e.g. $10,000,000,000.23"}}
+  {{input value=swordName id="swordName" class="form-control" placeholder="e.g. Excalibur"}}
   <button class="btn btn-success" {{action "save"}}>Add sword to lot</button>
 </form>
