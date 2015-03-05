@@ -3,5 +3,6 @@ Auction.Router.map(function() {
   this.resource("new-lot");
   this.resource("lot", {path: ':lot_id'}, function() {
     this.resource("add-sword");
+    this.resource("sword-details");
   });
 });
