@@ -1,3 +1,38 @@
-.jumbotron {
+.center {
   text-align: center;
+}
+
+body {
+  /*background-image: url("images/bg-throne.jpg");*/
+  background-image: url("images/bg-swords.jpg");
+  background-size: 250px 300px;
+}
+
+.container {
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.jumbotron {
+  color: black;
+  background-color: white;
+}
+
+h2{
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item{
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
 }

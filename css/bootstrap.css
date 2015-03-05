@@ -6200,3 +6200,49 @@ button.close {
     display: none !important;
   }
 }
+
+.btn-sleek {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #323138;
+}
+
+.btn-sleek:hover,
+.btn-sleek:focus,
+.btn-sleek:active,
+.btn-sleek.active,
+.open .dropdown-toggle.btn-sleek {
+  color: #ffffff;
+  background-color: #47373A;
+  border-color: #323138;
+}
+
+.btn-sleek:active,
+.btn-sleek.active,
+.open .dropdown-toggle.btn-sleek {
+  background-image: none;
+}
+
+.btn-sleek.disabled,
+.btn-sleek[disabled],
+fieldset[disabled] .btn-sleek,
+.btn-sleek.disabled:hover,
+.btn-sleek[disabled]:hover,
+fieldset[disabled] .btn-sleek:hover,
+.btn-sleek.disabled:focus,
+.btn-sleek[disabled]:focus,
+fieldset[disabled] .btn-sleek:focus,
+.btn-sleek.disabled:active,
+.btn-sleek[disabled]:active,
+fieldset[disabled] .btn-sleek:active,
+.btn-sleek.disabled.active,
+.btn-sleek[disabled].active,
+fieldset[disabled] .btn-sleek.active {
+  background-color: #000000;
+  border-color: #323138;
+}
+
+.btn-sleek .badge {
+  color: #000000;
+  background-color: #ffffff;
+}
