@@ -1,5 +1,5 @@
 <h3>Info for {{name}} lot:</h3>
-
+<a {{action "delete"}}>Delete</a>
 <div class="col-xs-6">
 
   <h4>Here are the swords in the {{name}} lot:</h4>
@@ -13,5 +13,8 @@
   {{#link-to 'add-sword' classNames="btn btn-warning"}}Add a new sword{{/link-to}}
 
   {{outlet}}
-
+  <div>
+  <br />
+  {{#link-to 'lots' classNames="btn btn-warning"}}See list of lots{{/link-to}}
+  </div>
 </div>
