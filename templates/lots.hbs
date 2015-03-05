@@ -1,8 +1,42 @@
+<div class="bs-example">
+  <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <h2>Enter the magic of the Sword</h2>
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        {{#each lot in model}}
+        <div class="item">
+          <h2>{{lot.name}}</h2>
+          <div class="carousel-caption">
+            <p>{{lot.description}}</p>
+            </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+  </div>
+</div>
+
+
+
 <h3>Here are your current lots:</h3>
 <ul>
   {{#each lot in model}}
-    <li>{{#link-to 'lot' lot}}{{lot.name}}{{/link-to}} | <a {{action 'deleteLot' lot}}>Delete this lot</a></li>
+    <li>{{#link-to 'lot' lot}}{{lot.name}}{{/link-to}} | <a class="btn btn-inverse btn-small" {{action 'deleteLot' lot}}><i class="icon-black icon-remove"></i>Delete this lot</a>
+    </li>
   {{/each}}
 </ul>
-
-{{#link-to 'new-lot' classNames='btn btn-danger'}}Add new lot{{/link-to}}
+{{#link-to 'new-lot' classNames='btn btn-sleek'}}Add new lot{{/link-to}}

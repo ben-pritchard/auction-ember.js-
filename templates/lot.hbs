@@ -1,20 +1,20 @@
-<h3>Info for {{name}} lot:</h3>
-<a {{action "delete"}}>Delete</a>
+<h2 class="center">Info for {{name}} lot:</h2>
 <div class="col-xs-6">
-
   <h4>Here are the swords in the {{name}} lot:</h4>
 
   <ul>
   {{#each sword in swords}}
-    <li>{{sword.name}}</li>
+    <li>{{sword.name}} | {{#link-to 'sword-details' sword}}Show Details{{/link-to}}</li>
   {{/each}}
   </ul>
 
-  {{#link-to 'add-sword' classNames="btn btn-warning"}}Add a new sword{{/link-to}}
+  {{#link-to 'add-sword' classNames="btn btn-sleek"}}Add a new sword{{/link-to}}
 
-  {{outlet}}
   <div>
   <br />
-  {{#link-to 'lots' classNames="btn btn-warning"}}See list of lots{{/link-to}}
+  {{#link-to 'lots' classNames="btn btn-sleek"}}See list of lots{{/link-to}}
   </div>
+</div>
+<div class="col-xs-6">
+  {{outlet}}
 </div>
