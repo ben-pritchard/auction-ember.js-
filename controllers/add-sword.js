@@ -2,10 +2,13 @@ Auction.AddSwordController = Ember.ObjectController.extend({
   needs: ['lot'],
   actions: {
     save: function() {
-      debugger;
       var newSword = this.store.createRecord('sword', {
         name: this.get('swordName'),
-        description: this.get('swordDescription')
+        owner: this.get('swordOwner'),
+        year: this.get('year'),
+        description: this.get('swordDescription'),
+        startingBid: this.get('startingBid'),
+        estValue: this.get('estValue')
       })
       newSword.save();
 
