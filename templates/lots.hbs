@@ -12,10 +12,11 @@
 
         {{#each lot in model}}
         <div class="item">
-          <h2>{{lot.name}}</h2>
+          <img class="imgResponsive img-responsive"{{bind-attr src=lot.image}} alt="Lot image">
           <div class="carousel-caption">
+            <h2>{{lot.name}}</h2>
             <p>{{lot.description}}</p>
-            </div>
+          </div>
         </div>
         {{/each}}
       </div>
